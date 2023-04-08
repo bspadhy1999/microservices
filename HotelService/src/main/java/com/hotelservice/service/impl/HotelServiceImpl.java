@@ -4,13 +4,14 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.hotelservice.model.Hotel;
 import com.hotelservice.repo.HotelRepo;
 import com.hotelservice.service.HotelService;
 import com.userservice.exceptions.ResourceNotFoundException;
 
-
+@Service
 public class HotelServiceImpl implements HotelService {
 	
 	@Autowired
